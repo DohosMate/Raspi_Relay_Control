@@ -1,0 +1,630 @@
+[Mon Jul 24 11:36:32.752975 2023] [wsgi:error] [pid 21756:tid 1964725248] [remote 192.168.0.110:50860] mod_wsgi (pid=21756): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Mon Jul 24 11:36:32.753264 2023] [wsgi:error] [pid 21756:tid 1964725248] [remote 192.168.0.110:50860] mod_wsgi (pid=21756): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Mon Jul 24 11:36:32.754454 2023] [wsgi:error] [pid 21756:tid 1964725248] [remote 192.168.0.110:50860] Traceback (most recent call last):
+[Mon Jul 24 11:36:32.754619 2023] [wsgi:error] [pid 21756:tid 1964725248] [remote 192.168.0.110:50860]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Mon Jul 24 11:36:32.754646 2023] [wsgi:error] [pid 21756:tid 1964725248] [remote 192.168.0.110:50860]     from app import app as application
+[Mon Jul 24 11:36:32.754700 2023] [wsgi:error] [pid 21756:tid 1964725248] [remote 192.168.0.110:50860]   File "/var/www/relay-flask-app/app.py", line 14, in <module>
+[Mon Jul 24 11:36:32.754722 2023] [wsgi:error] [pid 21756:tid 1964725248] [remote 192.168.0.110:50860]     app.congig['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+[Mon Jul 24 11:36:32.754807 2023] [wsgi:error] [pid 21756:tid 1964725248] [remote 192.168.0.110:50860] AttributeError: 'Flask' object has no attribute 'congig'
+[Mon Jul 24 11:36:40.126387 2023] [wsgi:error] [pid 21756:tid 1931154432] [remote 192.168.0.110:50859] mod_wsgi (pid=21756): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Mon Jul 24 11:36:40.126718 2023] [wsgi:error] [pid 21756:tid 1931154432] [remote 192.168.0.110:50859] mod_wsgi (pid=21756): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Mon Jul 24 11:36:40.127392 2023] [wsgi:error] [pid 21756:tid 1931154432] [remote 192.168.0.110:50859] Traceback (most recent call last):
+[Mon Jul 24 11:36:40.127643 2023] [wsgi:error] [pid 21756:tid 1931154432] [remote 192.168.0.110:50859]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Mon Jul 24 11:36:40.127692 2023] [wsgi:error] [pid 21756:tid 1931154432] [remote 192.168.0.110:50859]     from app import app as application
+[Mon Jul 24 11:36:40.127797 2023] [wsgi:error] [pid 21756:tid 1931154432] [remote 192.168.0.110:50859]   File "/var/www/relay-flask-app/app.py", line 14, in <module>
+[Mon Jul 24 11:36:40.127841 2023] [wsgi:error] [pid 21756:tid 1931154432] [remote 192.168.0.110:50859]     app.congig['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+[Mon Jul 24 11:36:40.127998 2023] [wsgi:error] [pid 21756:tid 1931154432] [remote 192.168.0.110:50859] AttributeError: 'Flask' object has no attribute 'congig'
+[Mon Jul 24 11:38:49.754880 2023] [wsgi:error] [pid 21854:tid 1964647424] First activation! Create database.db
+[Tue Jul 25 01:45:39.372602 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57672] mod_wsgi (pid=23126): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:45:39.372838 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57672] mod_wsgi (pid=23126): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:45:39.374037 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57672] Traceback (most recent call last):
+[Tue Jul 25 01:45:39.374210 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57672]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 01:45:39.374238 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57672]     from app import app as application
+[Tue Jul 25 01:45:39.374291 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57672]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 01:45:39.374313 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57672]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 01:45:39.374401 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57672] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 01:45:41.522863 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57673] mod_wsgi (pid=23126): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:45:41.523185 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57673] mod_wsgi (pid=23126): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:45:41.523891 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57673] Traceback (most recent call last):
+[Tue Jul 25 01:45:41.524164 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57673]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 01:45:41.524213 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57673]     from app import app as application
+[Tue Jul 25 01:45:41.524318 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57673]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 01:45:41.524361 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57673]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 01:45:41.524520 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57673] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 01:52:48.146502 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57716] mod_wsgi (pid=23126): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:52:48.146821 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57716] mod_wsgi (pid=23126): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:52:48.147456 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57716] Traceback (most recent call last):
+[Tue Jul 25 01:52:48.147707 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57716]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 01:52:48.147755 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57716]     from app import app as application
+[Tue Jul 25 01:52:48.147860 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57716]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 01:52:48.147903 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57716]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 01:52:48.148060 2023] [wsgi:error] [pid 23126:tid 1964647424] [remote 192.168.0.110:57716] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 01:52:54.519567 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57717] mod_wsgi (pid=23126): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:52:54.519860 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57717] mod_wsgi (pid=23126): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:52:54.520485 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57717] Traceback (most recent call last):
+[Tue Jul 25 01:52:54.520967 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57717]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 01:52:54.521028 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57717]     from app import app as application
+[Tue Jul 25 01:52:54.521134 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57717]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 01:52:54.521178 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57717]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 01:52:54.521340 2023] [wsgi:error] [pid 23126:tid 1931076608] [remote 192.168.0.110:57717] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 01:53:10.956949 2023] [wsgi:error] [pid 23240:tid 1964647424] [remote 192.168.0.110:57718] mod_wsgi (pid=23240): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:53:10.957221 2023] [wsgi:error] [pid 23240:tid 1964647424] [remote 192.168.0.110:57718] mod_wsgi (pid=23240): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:53:10.958424 2023] [wsgi:error] [pid 23240:tid 1964647424] [remote 192.168.0.110:57718] Traceback (most recent call last):
+[Tue Jul 25 01:53:10.958596 2023] [wsgi:error] [pid 23240:tid 1964647424] [remote 192.168.0.110:57718]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 01:53:10.958622 2023] [wsgi:error] [pid 23240:tid 1964647424] [remote 192.168.0.110:57718]     from app import app as application
+[Tue Jul 25 01:53:10.958675 2023] [wsgi:error] [pid 23240:tid 1964647424] [remote 192.168.0.110:57718]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 01:53:10.958697 2023] [wsgi:error] [pid 23240:tid 1964647424] [remote 192.168.0.110:57718]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 01:53:10.958784 2023] [wsgi:error] [pid 23240:tid 1964647424] [remote 192.168.0.110:57718] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 01:55:04.980771 2023] [wsgi:error] [pid 23345:tid 1964647424] [remote 192.168.0.110:57730] mod_wsgi (pid=23345): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:55:04.981013 2023] [wsgi:error] [pid 23345:tid 1964647424] [remote 192.168.0.110:57730] mod_wsgi (pid=23345): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:55:04.982220 2023] [wsgi:error] [pid 23345:tid 1964647424] [remote 192.168.0.110:57730] Traceback (most recent call last):
+[Tue Jul 25 01:55:04.982392 2023] [wsgi:error] [pid 23345:tid 1964647424] [remote 192.168.0.110:57730]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 01:55:04.982422 2023] [wsgi:error] [pid 23345:tid 1964647424] [remote 192.168.0.110:57730]     from app import app as application
+[Tue Jul 25 01:55:04.982475 2023] [wsgi:error] [pid 23345:tid 1964647424] [remote 192.168.0.110:57730]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 01:55:04.982497 2023] [wsgi:error] [pid 23345:tid 1964647424] [remote 192.168.0.110:57730]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 01:55:04.982586 2023] [wsgi:error] [pid 23345:tid 1964647424] [remote 192.168.0.110:57730] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 01:57:18.829192 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57889] mod_wsgi (pid=742): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:57:18.831049 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57889] mod_wsgi (pid=742): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:57:18.833400 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57889] Traceback (most recent call last):
+[Tue Jul 25 01:57:18.833594 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57889]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 01:57:18.833623 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57889]     from app import app as application
+[Tue Jul 25 01:57:18.833676 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57889]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 01:57:18.833698 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57889]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 01:57:18.833786 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57889] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 01:57:39.263557 2023] [wsgi:error] [pid 742:tid 1931416576] [remote 192.168.0.110:57888] mod_wsgi (pid=742): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:57:39.263877 2023] [wsgi:error] [pid 742:tid 1931416576] [remote 192.168.0.110:57888] mod_wsgi (pid=742): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 01:57:39.264587 2023] [wsgi:error] [pid 742:tid 1931416576] [remote 192.168.0.110:57888] Traceback (most recent call last):
+[Tue Jul 25 01:57:39.264840 2023] [wsgi:error] [pid 742:tid 1931416576] [remote 192.168.0.110:57888]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 01:57:39.264889 2023] [wsgi:error] [pid 742:tid 1931416576] [remote 192.168.0.110:57888]     from app import app as application
+[Tue Jul 25 01:57:39.264995 2023] [wsgi:error] [pid 742:tid 1931416576] [remote 192.168.0.110:57888]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 01:57:39.265039 2023] [wsgi:error] [pid 742:tid 1931416576] [remote 192.168.0.110:57888]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 01:57:39.265325 2023] [wsgi:error] [pid 742:tid 1931416576] [remote 192.168.0.110:57888] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 02:03:09.843361 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57923] mod_wsgi (pid=742): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:03:09.843674 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57923] mod_wsgi (pid=742): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:03:09.844306 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57923] Traceback (most recent call last):
+[Tue Jul 25 02:03:09.844552 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57923]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 02:03:09.844601 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57923]     from app import app as application
+[Tue Jul 25 02:03:09.844706 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57923]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 02:03:09.844749 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57923]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 02:03:09.844907 2023] [wsgi:error] [pid 742:tid 1964987392] [remote 192.168.0.110:57923] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 02:22:20.077831 2023] [wsgi:error] [pid 623:tid 1964086272] [remote 192.168.0.110:58002] mod_wsgi (pid=623): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:22:20.079666 2023] [wsgi:error] [pid 623:tid 1964086272] [remote 192.168.0.110:58002] mod_wsgi (pid=623): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:22:20.082579 2023] [wsgi:error] [pid 623:tid 1964086272] [remote 192.168.0.110:58002] Traceback (most recent call last):
+[Tue Jul 25 02:22:20.082785 2023] [wsgi:error] [pid 623:tid 1964086272] [remote 192.168.0.110:58002]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 02:22:20.082811 2023] [wsgi:error] [pid 623:tid 1964086272] [remote 192.168.0.110:58002]     from app import app as application
+[Tue Jul 25 02:22:20.082864 2023] [wsgi:error] [pid 623:tid 1964086272] [remote 192.168.0.110:58002]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 02:22:20.082886 2023] [wsgi:error] [pid 623:tid 1964086272] [remote 192.168.0.110:58002]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 02:22:20.082976 2023] [wsgi:error] [pid 623:tid 1964086272] [remote 192.168.0.110:58002] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 02:25:20.143910 2023] [wsgi:error] [pid 1325:tid 1964086272] [remote 192.168.0.110:58014] mod_wsgi (pid=1325): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:25:20.144150 2023] [wsgi:error] [pid 1325:tid 1964086272] [remote 192.168.0.110:58014] mod_wsgi (pid=1325): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:25:20.145359 2023] [wsgi:error] [pid 1325:tid 1964086272] [remote 192.168.0.110:58014] Traceback (most recent call last):
+[Tue Jul 25 02:25:20.145581 2023] [wsgi:error] [pid 1325:tid 1964086272] [remote 192.168.0.110:58014]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 02:25:20.145607 2023] [wsgi:error] [pid 1325:tid 1964086272] [remote 192.168.0.110:58014]     from app import app as application
+[Tue Jul 25 02:25:20.145660 2023] [wsgi:error] [pid 1325:tid 1964086272] [remote 192.168.0.110:58014]   File "/var/www/relay-flask-app/app.py", line 11, in <module>
+[Tue Jul 25 02:25:20.145681 2023] [wsgi:error] [pid 1325:tid 1964086272] [remote 192.168.0.110:58014]     GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 02:25:20.145768 2023] [wsgi:error] [pid 1325:tid 1964086272] [remote 192.168.0.110:58014] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 02:27:05.355360 2023] [wsgi:error] [pid 1409:tid 1964008448] First activation! Create database.db
+[Tue Jul 25 02:27:05.371255 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021] mod_wsgi (pid=1409): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:27:05.371454 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021] mod_wsgi (pid=1409): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:27:05.398339 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021] Traceback (most recent call last):
+[Tue Jul 25 02:27:05.398652 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 02:27:05.398681 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]     from app import app as application
+[Tue Jul 25 02:27:05.398735 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]   File "/var/www/relay-flask-app/app.py", line 58, in <module>
+[Tue Jul 25 02:27:05.398757 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]     def relay_on(id):
+[Tue Jul 25 02:27:05.398809 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/scaffold.py", line 436, in decorator
+[Tue Jul 25 02:27:05.398833 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]     self.add_url_rule(rule, endpoint, f, **options)
+[Tue Jul 25 02:27:05.398885 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/scaffold.py", line 51, in wrapper_func
+[Tue Jul 25 02:27:05.398907 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]     return f(self, *args, **kwargs)
+[Tue Jul 25 02:27:05.398958 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1052, in add_url_rule
+[Tue Jul 25 02:27:05.398981 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]     rule = self.url_rule_class(rule, methods=methods, **options)
+[Tue Jul 25 02:27:05.399033 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/werkzeug/routing/rules.py", line 457, in __init__
+[Tue Jul 25 02:27:05.399056 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021]     raise ValueError("urls must start with a leading slash")
+[Tue Jul 25 02:27:05.399147 2023] [wsgi:error] [pid 1409:tid 1964008448] [remote 192.168.0.110:58021] ValueError: urls must start with a leading slash
+[Tue Jul 25 02:27:09.081103 2023] [wsgi:error] [pid 1409:tid 1930437632] First activation! Create database.db
+[Tue Jul 25 02:27:09.094041 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022] mod_wsgi (pid=1409): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:27:09.094396 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022] mod_wsgi (pid=1409): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 02:27:09.095522 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022] Traceback (most recent call last):
+[Tue Jul 25 02:27:09.095941 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 02:27:09.095989 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]     from app import app as application
+[Tue Jul 25 02:27:09.096094 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]   File "/var/www/relay-flask-app/app.py", line 58, in <module>
+[Tue Jul 25 02:27:09.096137 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]     def relay_on(id):
+[Tue Jul 25 02:27:09.096239 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/scaffold.py", line 436, in decorator
+[Tue Jul 25 02:27:09.096285 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]     self.add_url_rule(rule, endpoint, f, **options)
+[Tue Jul 25 02:27:09.096386 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/scaffold.py", line 51, in wrapper_func
+[Tue Jul 25 02:27:09.096430 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]     return f(self, *args, **kwargs)
+[Tue Jul 25 02:27:09.096530 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1052, in add_url_rule
+[Tue Jul 25 02:27:09.096574 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]     rule = self.url_rule_class(rule, methods=methods, **options)
+[Tue Jul 25 02:27:09.096674 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/werkzeug/routing/rules.py", line 457, in __init__
+[Tue Jul 25 02:27:09.096720 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022]     raise ValueError("urls must start with a leading slash")
+[Tue Jul 25 02:27:09.096878 2023] [wsgi:error] [pid 1409:tid 1930437632] [remote 192.168.0.110:58022] ValueError: urls must start with a leading slash
+[Tue Jul 25 02:28:43.274005 2023] [wsgi:error] [pid 1508:tid 1964008448] /var/www/relay-flask-app/app.py:11: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:28:43.274241 2023] [wsgi:error] [pid 1508:tid 1964008448]   GPIO.setup(RELAIS_1_GPIO, GPIO.OUT)
+[Tue Jul 25 02:28:43.274507 2023] [wsgi:error] [pid 1508:tid 1964008448] /var/www/relay-flask-app/app.py:13: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:28:43.274556 2023] [wsgi:error] [pid 1508:tid 1964008448]   GPIO.setup(RELAIS_2_GPIO, GPIO.OUT)
+[Tue Jul 25 02:28:43.274766 2023] [wsgi:error] [pid 1508:tid 1964008448] /var/www/relay-flask-app/app.py:15: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:28:43.274813 2023] [wsgi:error] [pid 1508:tid 1964008448]   GPIO.setup(RELAIS_3_GPIO, GPIO.OUT)
+[Tue Jul 25 02:28:43.275018 2023] [wsgi:error] [pid 1508:tid 1964008448] /var/www/relay-flask-app/app.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:28:43.275064 2023] [wsgi:error] [pid 1508:tid 1964008448]   GPIO.setup(RELAIS_4_GPIO, GPIO.OUT)
+[Tue Jul 25 02:28:43.275272 2023] [wsgi:error] [pid 1508:tid 1964008448] /var/www/relay-flask-app/app.py:19: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:28:43.275371 2023] [wsgi:error] [pid 1508:tid 1964008448]   GPIO.setup(RELAIS_5_GPIO, GPIO.OUT)
+[Tue Jul 25 02:28:43.275595 2023] [wsgi:error] [pid 1508:tid 1964008448] /var/www/relay-flask-app/app.py:21: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:28:43.275641 2023] [wsgi:error] [pid 1508:tid 1964008448]   GPIO.setup(RELAIS_6_GPIO, GPIO.OUT)
+[Tue Jul 25 02:28:43.275846 2023] [wsgi:error] [pid 1508:tid 1964008448] /var/www/relay-flask-app/app.py:23: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:28:43.275891 2023] [wsgi:error] [pid 1508:tid 1964008448]   GPIO.setup(RELAIS_7_GPIO, GPIO.OUT)
+[Tue Jul 25 02:28:43.276096 2023] [wsgi:error] [pid 1508:tid 1964008448] /var/www/relay-flask-app/app.py:25: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:28:43.276142 2023] [wsgi:error] [pid 1508:tid 1964008448]   GPIO.setup(RELAIS_8_GPIO, GPIO.OUT)
+[Tue Jul 25 02:28:43.457596 2023] [wsgi:error] [pid 1508:tid 1964008448] First activation! Create database.db
+[Tue Jul 25 02:28:57.373245 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026] [2023-07-25 02:28:57,361] ERROR in app: Exception on /1on [GET]
+[Tue Jul 25 02:28:57.373419 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026] Traceback (most recent call last):
+[Tue Jul 25 02:28:57.373456 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:28:57.373491 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]     response = self.full_dispatch_request()
+[Tue Jul 25 02:28:57.373524 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 02:28:57.373558 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]     rv = self.handle_user_exception(e)
+[Tue Jul 25 02:28:57.373590 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 02:28:57.373653 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 02:28:57.373686 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 02:28:57.373720 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]     rv = self.dispatch_request()
+[Tue Jul 25 02:28:57.373767 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 02:28:57.373802 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 02:28:57.373833 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]   File "/var/www/relay-flask-app/app.py", line 60, in relay_on
+[Tue Jul 25 02:28:57.373864 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026]     GPIO.output(string, GPIO.HIGH)
+[Tue Jul 25 02:28:57.373893 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58026] ValueError: Channel must be an integer or list/tuple of integers
+[Tue Jul 25 02:29:11.727895 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028] [2023-07-25 02:29:11,725] ERROR in app: Exception on /1on [GET]
+[Tue Jul 25 02:29:11.728072 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028] Traceback (most recent call last):
+[Tue Jul 25 02:29:11.728114 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:29:11.728154 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]     response = self.full_dispatch_request()
+[Tue Jul 25 02:29:11.728191 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 02:29:11.728230 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]     rv = self.handle_user_exception(e)
+[Tue Jul 25 02:29:11.728267 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 02:29:11.728306 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 02:29:11.728343 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 02:29:11.728382 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]     rv = self.dispatch_request()
+[Tue Jul 25 02:29:11.728417 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 02:29:11.728457 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 02:29:11.728493 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]   File "/var/www/relay-flask-app/app.py", line 60, in relay_on
+[Tue Jul 25 02:29:11.728528 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028]     GPIO.output(string, GPIO.HIGH)
+[Tue Jul 25 02:29:11.728562 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58028] ValueError: Channel must be an integer or list/tuple of integers
+[Tue Jul 25 02:29:15.405646 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029] [2023-07-25 02:29:15,403] ERROR in app: Exception on /1on [GET]
+[Tue Jul 25 02:29:15.405843 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029] Traceback (most recent call last):
+[Tue Jul 25 02:29:15.405905 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:29:15.405946 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]     response = self.full_dispatch_request()
+[Tue Jul 25 02:29:15.405983 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 02:29:15.406022 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]     rv = self.handle_user_exception(e)
+[Tue Jul 25 02:29:15.406058 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 02:29:15.406152 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 02:29:15.406190 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 02:29:15.406229 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]     rv = self.dispatch_request()
+[Tue Jul 25 02:29:15.406264 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 02:29:15.406303 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 02:29:15.406339 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]   File "/var/www/relay-flask-app/app.py", line 60, in relay_on
+[Tue Jul 25 02:29:15.406374 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029]     GPIO.output(string, GPIO.HIGH)
+[Tue Jul 25 02:29:15.406408 2023] [wsgi:error] [pid 1508:tid 1938830336] [remote 192.168.0.110:58029] ValueError: Channel must be an integer or list/tuple of integers
+[Tue Jul 25 02:29:20.622201 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030] [2023-07-25 02:29:20,620] ERROR in app: Exception on /1off [GET]
+[Tue Jul 25 02:29:20.622382 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030] Traceback (most recent call last):
+[Tue Jul 25 02:29:20.622426 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:29:20.622467 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]     response = self.full_dispatch_request()
+[Tue Jul 25 02:29:20.622505 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 02:29:20.622545 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]     rv = self.handle_user_exception(e)
+[Tue Jul 25 02:29:20.622583 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 02:29:20.622622 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 02:29:20.622660 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 02:29:20.622699 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]     rv = self.dispatch_request()
+[Tue Jul 25 02:29:20.622734 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 02:29:20.622774 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 02:29:20.622810 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]   File "/var/www/relay-flask-app/app.py", line 65, in relay_off
+[Tue Jul 25 02:29:20.622846 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030]     GPIO.output(string, GPIO.LOW)
+[Tue Jul 25 02:29:20.622933 2023] [wsgi:error] [pid 1508:tid 1964008448] [remote 192.168.0.110:58030] ValueError: Channel must be an integer or list/tuple of integers
+[Tue Jul 25 02:37:24.759652 2023] [wsgi:error] [pid 1639:tid 1964008448] /var/www/relay-flask-app/app.py:10: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:37:24.759802 2023] [wsgi:error] [pid 1639:tid 1964008448]   GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 02:37:24.759946 2023] [wsgi:error] [pid 1639:tid 1964008448] /var/www/relay-flask-app/app.py:11: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:37:24.759971 2023] [wsgi:error] [pid 1639:tid 1964008448]   GPIO.setup(2, GPIO.OUT)
+[Tue Jul 25 02:37:24.760076 2023] [wsgi:error] [pid 1639:tid 1964008448] /var/www/relay-flask-app/app.py:12: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:37:24.760099 2023] [wsgi:error] [pid 1639:tid 1964008448]   GPIO.setup(3, GPIO.OUT)
+[Tue Jul 25 02:37:24.760201 2023] [wsgi:error] [pid 1639:tid 1964008448] /var/www/relay-flask-app/app.py:13: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:37:24.760225 2023] [wsgi:error] [pid 1639:tid 1964008448]   GPIO.setup(4, GPIO.OUT)
+[Tue Jul 25 02:37:24.760328 2023] [wsgi:error] [pid 1639:tid 1964008448] /var/www/relay-flask-app/app.py:14: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:37:24.760351 2023] [wsgi:error] [pid 1639:tid 1964008448]   GPIO.setup(5, GPIO.OUT)
+[Tue Jul 25 02:37:24.760462 2023] [wsgi:error] [pid 1639:tid 1964008448] /var/www/relay-flask-app/app.py:15: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:37:24.760485 2023] [wsgi:error] [pid 1639:tid 1964008448]   GPIO.setup(6, GPIO.OUT)
+[Tue Jul 25 02:37:24.760587 2023] [wsgi:error] [pid 1639:tid 1964008448] /var/www/relay-flask-app/app.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:37:24.760610 2023] [wsgi:error] [pid 1639:tid 1964008448]   GPIO.setup(7, GPIO.OUT)
+[Tue Jul 25 02:37:24.760711 2023] [wsgi:error] [pid 1639:tid 1964008448] /var/www/relay-flask-app/app.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:37:24.760787 2023] [wsgi:error] [pid 1639:tid 1964008448]   GPIO.setup(8, GPIO.OUT)
+[Tue Jul 25 02:37:24.857374 2023] [wsgi:error] [pid 1639:tid 1964008448] First activation! Create database.db
+[Tue Jul 25 02:37:24.894987 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379] [2023-07-25 02:37:24,889] ERROR in app: Exception on /1off [GET]
+[Tue Jul 25 02:37:24.895087 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379] Traceback (most recent call last):
+[Tue Jul 25 02:37:24.895108 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:37:24.895129 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]     response = self.full_dispatch_request()
+[Tue Jul 25 02:37:24.895148 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 02:37:24.895168 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]     rv = self.handle_user_exception(e)
+[Tue Jul 25 02:37:24.895187 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 02:37:24.895242 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 02:37:24.895262 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 02:37:24.895281 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]     rv = self.dispatch_request()
+[Tue Jul 25 02:37:24.895299 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 02:37:24.895319 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 02:37:24.895337 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]   File "/var/www/relay-flask-app/app.py", line 55, in relay_off
+[Tue Jul 25 02:37:24.895355 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379]     GPIO.output(id, GPIO.LOW)
+[Tue Jul 25 02:37:24.895372 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57379] ValueError: Channel must be an integer or list/tuple of integers
+[Tue Jul 25 02:37:49.156324 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381] [2023-07-25 02:37:49,154] ERROR in app: Exception on /1on [GET]
+[Tue Jul 25 02:37:49.156518 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381] Traceback (most recent call last):
+[Tue Jul 25 02:37:49.156562 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:37:49.156603 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]     response = self.full_dispatch_request()
+[Tue Jul 25 02:37:49.156641 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 02:37:49.156680 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]     rv = self.handle_user_exception(e)
+[Tue Jul 25 02:37:49.156717 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 02:37:49.156757 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 02:37:49.156794 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 02:37:49.156833 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]     rv = self.dispatch_request()
+[Tue Jul 25 02:37:49.156869 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 02:37:49.156909 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 02:37:49.156945 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]   File "/var/www/relay-flask-app/app.py", line 51, in relay_on
+[Tue Jul 25 02:37:49.156981 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381]     GPIO.output(id, GPIO.HIGH)
+[Tue Jul 25 02:37:49.157067 2023] [wsgi:error] [pid 1639:tid 1964008448] [remote 192.168.0.110:57381] ValueError: Channel must be an integer or list/tuple of integers
+[Tue Jul 25 02:40:26.972812 2023] [wsgi:error] [pid 1733:tid 1964008448] /var/www/relay-flask-app/app.py:10: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:40:26.972978 2023] [wsgi:error] [pid 1733:tid 1964008448]   GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 02:40:26.973200 2023] [wsgi:error] [pid 1733:tid 1964008448] /var/www/relay-flask-app/app.py:11: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:40:26.973227 2023] [wsgi:error] [pid 1733:tid 1964008448]   GPIO.setup(2, GPIO.OUT)
+[Tue Jul 25 02:40:26.973341 2023] [wsgi:error] [pid 1733:tid 1964008448] /var/www/relay-flask-app/app.py:12: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:40:26.973366 2023] [wsgi:error] [pid 1733:tid 1964008448]   GPIO.setup(3, GPIO.OUT)
+[Tue Jul 25 02:40:26.973469 2023] [wsgi:error] [pid 1733:tid 1964008448] /var/www/relay-flask-app/app.py:13: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:40:26.973493 2023] [wsgi:error] [pid 1733:tid 1964008448]   GPIO.setup(4, GPIO.OUT)
+[Tue Jul 25 02:40:26.973597 2023] [wsgi:error] [pid 1733:tid 1964008448] /var/www/relay-flask-app/app.py:14: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:40:26.973621 2023] [wsgi:error] [pid 1733:tid 1964008448]   GPIO.setup(5, GPIO.OUT)
+[Tue Jul 25 02:40:26.973732 2023] [wsgi:error] [pid 1733:tid 1964008448] /var/www/relay-flask-app/app.py:15: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:40:26.973756 2023] [wsgi:error] [pid 1733:tid 1964008448]   GPIO.setup(6, GPIO.OUT)
+[Tue Jul 25 02:40:26.973856 2023] [wsgi:error] [pid 1733:tid 1964008448] /var/www/relay-flask-app/app.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:40:26.973880 2023] [wsgi:error] [pid 1733:tid 1964008448]   GPIO.setup(7, GPIO.OUT)
+[Tue Jul 25 02:40:26.973980 2023] [wsgi:error] [pid 1733:tid 1964008448] /var/www/relay-flask-app/app.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:40:26.974004 2023] [wsgi:error] [pid 1733:tid 1964008448]   GPIO.setup(8, GPIO.OUT)
+[Tue Jul 25 02:40:27.072099 2023] [wsgi:error] [pid 1733:tid 1964008448] First activation! Create database.db
+[Tue Jul 25 02:40:27.109424 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390] [2023-07-25 02:40:27,105] ERROR in app: Exception on /1/on [GET]
+[Tue Jul 25 02:40:27.109527 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390] Traceback (most recent call last):
+[Tue Jul 25 02:40:27.109549 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:40:27.109570 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390]     response = self.full_dispatch_request()
+[Tue Jul 25 02:40:27.109589 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1487, in full_dispatch_request
+[Tue Jul 25 02:40:27.109610 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390]     return self.finalize_request(rv)
+[Tue Jul 25 02:40:27.109629 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1506, in finalize_request
+[Tue Jul 25 02:40:27.109684 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390]     response = self.make_response(rv)
+[Tue Jul 25 02:40:27.109703 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1801, in make_response
+[Tue Jul 25 02:40:27.109723 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390]     raise TypeError(
+[Tue Jul 25 02:40:27.109741 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57390] TypeError: The view function for 'relay_on' did not return a valid response. The function either returned None or ended without a return statement.
+[Tue Jul 25 02:40:33.257151 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389] [2023-07-25 02:40:33,255] ERROR in app: Exception on /1/off [GET]
+[Tue Jul 25 02:40:33.257348 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389] Traceback (most recent call last):
+[Tue Jul 25 02:40:33.257392 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:40:33.257435 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389]     response = self.full_dispatch_request()
+[Tue Jul 25 02:40:33.257473 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1487, in full_dispatch_request
+[Tue Jul 25 02:40:33.257512 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389]     return self.finalize_request(rv)
+[Tue Jul 25 02:40:33.257549 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1506, in finalize_request
+[Tue Jul 25 02:40:33.257588 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389]     response = self.make_response(rv)
+[Tue Jul 25 02:40:33.257624 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1801, in make_response
+[Tue Jul 25 02:40:33.257663 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389]     raise TypeError(
+[Tue Jul 25 02:40:33.257702 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57389] TypeError: The view function for 'relay_off' did not return a valid response. The function either returned None or ended without a return statement.
+[Tue Jul 25 02:40:49.629432 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391] [2023-07-25 02:40:49,627] ERROR in app: Exception on /2/on [GET]
+[Tue Jul 25 02:40:49.629629 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391] Traceback (most recent call last):
+[Tue Jul 25 02:40:49.629672 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:40:49.629712 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391]     response = self.full_dispatch_request()
+[Tue Jul 25 02:40:49.629750 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1487, in full_dispatch_request
+[Tue Jul 25 02:40:49.629789 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391]     return self.finalize_request(rv)
+[Tue Jul 25 02:40:49.629825 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1506, in finalize_request
+[Tue Jul 25 02:40:49.629917 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391]     response = self.make_response(rv)
+[Tue Jul 25 02:40:49.629954 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1801, in make_response
+[Tue Jul 25 02:40:49.629993 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391]     raise TypeError(
+[Tue Jul 25 02:40:49.630029 2023] [wsgi:error] [pid 1733:tid 1964008448] [remote 192.168.0.110:57391] TypeError: The view function for 'relay_on' did not return a valid response. The function either returned None or ended without a return statement.
+[Tue Jul 25 02:41:08.896969 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393] [2023-07-25 02:41:08,895] ERROR in app: Exception on /2/off [GET]
+[Tue Jul 25 02:41:08.897158 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393] Traceback (most recent call last):
+[Tue Jul 25 02:41:08.897200 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:41:08.897242 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393]     response = self.full_dispatch_request()
+[Tue Jul 25 02:41:08.897280 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1487, in full_dispatch_request
+[Tue Jul 25 02:41:08.897319 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393]     return self.finalize_request(rv)
+[Tue Jul 25 02:41:08.897356 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1506, in finalize_request
+[Tue Jul 25 02:41:08.897396 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393]     response = self.make_response(rv)
+[Tue Jul 25 02:41:08.897432 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1801, in make_response
+[Tue Jul 25 02:41:08.897472 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393]     raise TypeError(
+[Tue Jul 25 02:41:08.897508 2023] [wsgi:error] [pid 1733:tid 1930437632] [remote 192.168.0.110:57393] TypeError: The view function for 'relay_off' did not return a valid response. The function either returned None or ended without a return statement.
+[Tue Jul 25 02:45:50.784763 2023] [wsgi:error] [pid 1848:tid 1964008448] /var/www/relay-flask-app/app.py:10: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:45:50.784990 2023] [wsgi:error] [pid 1848:tid 1964008448]   GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 02:45:50.785252 2023] [wsgi:error] [pid 1848:tid 1964008448] /var/www/relay-flask-app/app.py:11: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:45:50.785300 2023] [wsgi:error] [pid 1848:tid 1964008448]   GPIO.setup(2, GPIO.OUT)
+[Tue Jul 25 02:45:50.785509 2023] [wsgi:error] [pid 1848:tid 1964008448] /var/www/relay-flask-app/app.py:12: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:45:50.785555 2023] [wsgi:error] [pid 1848:tid 1964008448]   GPIO.setup(3, GPIO.OUT)
+[Tue Jul 25 02:45:50.785762 2023] [wsgi:error] [pid 1848:tid 1964008448] /var/www/relay-flask-app/app.py:13: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:45:50.785859 2023] [wsgi:error] [pid 1848:tid 1964008448]   GPIO.setup(4, GPIO.OUT)
+[Tue Jul 25 02:45:50.786069 2023] [wsgi:error] [pid 1848:tid 1964008448] /var/www/relay-flask-app/app.py:14: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:45:50.786115 2023] [wsgi:error] [pid 1848:tid 1964008448]   GPIO.setup(5, GPIO.OUT)
+[Tue Jul 25 02:45:50.786320 2023] [wsgi:error] [pid 1848:tid 1964008448] /var/www/relay-flask-app/app.py:15: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:45:50.786366 2023] [wsgi:error] [pid 1848:tid 1964008448]   GPIO.setup(6, GPIO.OUT)
+[Tue Jul 25 02:45:50.786569 2023] [wsgi:error] [pid 1848:tid 1964008448] /var/www/relay-flask-app/app.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:45:50.786614 2023] [wsgi:error] [pid 1848:tid 1964008448]   GPIO.setup(7, GPIO.OUT)
+[Tue Jul 25 02:45:50.786817 2023] [wsgi:error] [pid 1848:tid 1964008448] /var/www/relay-flask-app/app.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 02:45:50.786862 2023] [wsgi:error] [pid 1848:tid 1964008448]   GPIO.setup(8, GPIO.OUT)
+[Tue Jul 25 02:45:50.967813 2023] [wsgi:error] [pid 1848:tid 1964008448] First activation! Create database.db
+[Tue Jul 25 02:47:30.451158 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411] [2023-07-25 02:47:30,442] ERROR in app: Exception on /9/on [GET]
+[Tue Jul 25 02:47:30.451342 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411] Traceback (most recent call last):
+[Tue Jul 25 02:47:30.451385 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:47:30.451426 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]     response = self.full_dispatch_request()
+[Tue Jul 25 02:47:30.451465 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 02:47:30.451504 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]     rv = self.handle_user_exception(e)
+[Tue Jul 25 02:47:30.451542 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 02:47:30.451582 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 02:47:30.451619 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 02:47:30.451658 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]     rv = self.dispatch_request()
+[Tue Jul 25 02:47:30.451694 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 02:47:30.451734 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 02:47:30.451770 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]   File "/var/www/relay-flask-app/app.py", line 51, in relay_on
+[Tue Jul 25 02:47:30.451857 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411]     GPIO.output(int(id), GPIO.HIGH)
+[Tue Jul 25 02:47:30.451894 2023] [wsgi:error] [pid 1848:tid 1964008448] [remote 192.168.0.110:57411] RuntimeError: The GPIO channel has not been set up as an OUTPUT
+[Tue Jul 25 02:47:45.981777 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412] [2023-07-25 02:47:45,979] ERROR in app: Exception on /0/on [GET]
+[Tue Jul 25 02:47:45.981978 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412] Traceback (most recent call last):
+[Tue Jul 25 02:47:45.982022 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 02:47:45.982063 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]     response = self.full_dispatch_request()
+[Tue Jul 25 02:47:45.982102 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 02:47:45.982141 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]     rv = self.handle_user_exception(e)
+[Tue Jul 25 02:47:45.982180 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 02:47:45.982221 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 02:47:45.982259 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 02:47:45.982298 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]     rv = self.dispatch_request()
+[Tue Jul 25 02:47:45.982334 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 02:47:45.982374 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 02:47:45.982411 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]   File "/var/www/relay-flask-app/app.py", line 51, in relay_on
+[Tue Jul 25 02:47:45.982447 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412]     GPIO.output(int(id), GPIO.HIGH)
+[Tue Jul 25 02:47:45.982481 2023] [wsgi:error] [pid 1848:tid 1930437632] [remote 192.168.0.110:57412] RuntimeError: The GPIO channel has not been set up as an OUTPUT
+[Tue Jul 25 03:57:05.466034 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57495] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:05.467928 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57495] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:05.470871 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57495] Traceback (most recent call last):
+[Tue Jul 25 03:57:05.471072 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57495]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:57:05.471100 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57495]     from app import app as application
+[Tue Jul 25 03:57:05.471152 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57495]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:57:05.471219 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57495]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:57:05.471310 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57495] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:57:09.872799 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57494] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:09.873093 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57494] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:09.873725 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57494] Traceback (most recent call last):
+[Tue Jul 25 03:57:09.873973 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57494]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:57:09.874022 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57494]     from app import app as application
+[Tue Jul 25 03:57:09.874125 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57494]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:57:09.874168 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57494]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:57:09.874323 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57494] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:57:31.890869 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57496] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:31.891168 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57496] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:31.891795 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57496] Traceback (most recent call last):
+[Tue Jul 25 03:57:31.892039 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57496]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:57:31.892087 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57496]     from app import app as application
+[Tue Jul 25 03:57:31.892191 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57496]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:57:31.892234 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57496]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:57:31.892389 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57496] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:57:37.112539 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57498] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:37.117928 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57498] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:37.118713 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57498] Traceback (most recent call last):
+[Tue Jul 25 03:57:37.118987 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57498]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:57:37.119034 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57498]     from app import app as application
+[Tue Jul 25 03:57:37.119138 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57498]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:57:37.119181 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57498]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:57:37.119372 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57498] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:57:37.934603 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57500] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:37.934856 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57500] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:37.935476 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57500] Traceback (most recent call last):
+[Tue Jul 25 03:57:37.935719 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57500]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:57:37.935766 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57500]     from app import app as application
+[Tue Jul 25 03:57:37.935868 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57500]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:57:37.935911 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57500]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:57:37.936068 2023] [wsgi:error] [pid 624:tid 1964356608] [remote 192.168.0.110:57500] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:57:39.560824 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57501] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:39.561099 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57501] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:57:39.561722 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57501] Traceback (most recent call last):
+[Tue Jul 25 03:57:39.561964 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57501]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:57:39.562011 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57501]     from app import app as application
+[Tue Jul 25 03:57:39.562115 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57501]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:57:39.562158 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57501]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:57:39.562316 2023] [wsgi:error] [pid 624:tid 1939178496] [remote 192.168.0.110:57501] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:58:04.613242 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57502] mod_wsgi (pid=1292): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:04.613476 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57502] mod_wsgi (pid=1292): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:04.614664 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57502] Traceback (most recent call last):
+[Tue Jul 25 03:58:04.614829 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57502]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:58:04.614856 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57502]     from app import app as application
+[Tue Jul 25 03:58:04.614909 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57502]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:58:04.614931 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57502]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:58:04.615016 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57502] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:58:10.088438 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57503] mod_wsgi (pid=1292): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:10.088820 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57503] mod_wsgi (pid=1292): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:10.089476 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57503] Traceback (most recent call last):
+[Tue Jul 25 03:58:10.089730 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57503]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:58:10.089780 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57503]     from app import app as application
+[Tue Jul 25 03:58:10.089885 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57503]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:58:10.089929 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57503]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:58:10.090085 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57503] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:58:14.785220 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57504] mod_wsgi (pid=1292): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:14.785494 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57504] mod_wsgi (pid=1292): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:14.786117 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57504] Traceback (most recent call last):
+[Tue Jul 25 03:58:14.786363 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57504]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:58:14.786410 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57504]     from app import app as application
+[Tue Jul 25 03:58:14.786513 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57504]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:58:14.786556 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57504]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:58:14.786710 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57504] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:58:21.864165 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57505] mod_wsgi (pid=1292): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:21.864472 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57505] mod_wsgi (pid=1292): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:21.865102 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57505] Traceback (most recent call last):
+[Tue Jul 25 03:58:21.865348 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57505]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:58:21.865397 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57505]     from app import app as application
+[Tue Jul 25 03:58:21.865503 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57505]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:58:21.865546 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57505]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:58:21.865703 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57505] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:58:29.602912 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57506] mod_wsgi (pid=1292): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:29.603216 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57506] mod_wsgi (pid=1292): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:29.603908 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57506] Traceback (most recent call last):
+[Tue Jul 25 03:58:29.604155 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57506]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:58:29.604203 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57506]     from app import app as application
+[Tue Jul 25 03:58:29.604305 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57506]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:58:29.604348 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57506]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:58:29.604501 2023] [wsgi:error] [pid 1292:tid 1964356608] [remote 192.168.0.110:57506] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 03:58:42.107697 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57508] mod_wsgi (pid=1292): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:42.107997 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57508] mod_wsgi (pid=1292): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 03:58:42.108721 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57508] Traceback (most recent call last):
+[Tue Jul 25 03:58:42.108991 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57508]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 03:58:42.109039 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57508]     from app import app as application
+[Tue Jul 25 03:58:42.109144 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57508]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 03:58:42.109188 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57508]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 03:58:42.109345 2023] [wsgi:error] [pid 1292:tid 1930785792] [remote 192.168.0.110:57508] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 04:01:40.693012 2023] [wsgi:error] [pid 1402:tid 1964278784] [remote 192.168.0.110:57596] mod_wsgi (pid=1402): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:01:40.693251 2023] [wsgi:error] [pid 1402:tid 1964278784] [remote 192.168.0.110:57596] mod_wsgi (pid=1402): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:01:40.694426 2023] [wsgi:error] [pid 1402:tid 1964278784] [remote 192.168.0.110:57596] Traceback (most recent call last):
+[Tue Jul 25 04:01:40.694591 2023] [wsgi:error] [pid 1402:tid 1964278784] [remote 192.168.0.110:57596]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 04:01:40.694618 2023] [wsgi:error] [pid 1402:tid 1964278784] [remote 192.168.0.110:57596]     from app import app as application
+[Tue Jul 25 04:01:40.694670 2023] [wsgi:error] [pid 1402:tid 1964278784] [remote 192.168.0.110:57596]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 04:01:40.694691 2023] [wsgi:error] [pid 1402:tid 1964278784] [remote 192.168.0.110:57596]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 04:01:40.694778 2023] [wsgi:error] [pid 1402:tid 1964278784] [remote 192.168.0.110:57596] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 04:02:30.038319 2023] [wsgi:error] [pid 1404:tid 1971319808] (2)No such file or directory: [client 192.168.0.110:57595] mod_wsgi (pid=1404): Unable to connect to WSGI daemon process 'flaskapp' on '/var/run/apache2/wsgi.621.2.1.sock' as user with uid=33.
+[Tue Jul 25 04:02:39.265561 2023] [wsgi:error] [pid 1483:tid 1964278784] First activation! Create database.db
+[Tue Jul 25 04:20:52.284834 2023] [wsgi:error] [pid 588:tid 1964553216] First activation! Create database.db
+[Tue Jul 25 04:34:33.600066 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58804] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:34:33.603435 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58804] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:34:33.606352 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58804] Traceback (most recent call last):
+[Tue Jul 25 04:34:33.606546 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58804]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 04:34:33.606572 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58804]     from app import app as application
+[Tue Jul 25 04:34:33.606626 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58804]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 04:34:33.606647 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58804]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 04:34:33.606738 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58804] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 04:34:39.399035 2023] [wsgi:error] [pid 624:tid 1931174912] [remote 192.168.0.110:58806] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:34:39.399348 2023] [wsgi:error] [pid 624:tid 1931174912] [remote 192.168.0.110:58806] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:34:39.399973 2023] [wsgi:error] [pid 624:tid 1931174912] [remote 192.168.0.110:58806] Traceback (most recent call last):
+[Tue Jul 25 04:34:39.400222 2023] [wsgi:error] [pid 624:tid 1931174912] [remote 192.168.0.110:58806]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 04:34:39.400270 2023] [wsgi:error] [pid 624:tid 1931174912] [remote 192.168.0.110:58806]     from app import app as application
+[Tue Jul 25 04:34:39.400374 2023] [wsgi:error] [pid 624:tid 1931174912] [remote 192.168.0.110:58806]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 04:34:39.400418 2023] [wsgi:error] [pid 624:tid 1931174912] [remote 192.168.0.110:58806]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 04:34:39.400576 2023] [wsgi:error] [pid 624:tid 1931174912] [remote 192.168.0.110:58806] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 04:36:16.070059 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58863] mod_wsgi (pid=624): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:36:16.070375 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58863] mod_wsgi (pid=624): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:36:16.071010 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58863] Traceback (most recent call last):
+[Tue Jul 25 04:36:16.071260 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58863]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 04:36:16.071308 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58863]     from app import app as application
+[Tue Jul 25 04:36:16.071413 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58863]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 04:36:16.071457 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58863]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 04:36:16.071740 2023] [wsgi:error] [pid 624:tid 1964745728] [remote 192.168.0.110:58863] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 04:37:53.615437 2023] [wsgi:error] [pid 624:tid 1931174912] First activation! Create database.db
+[Tue Jul 25 04:43:30.889623 2023] [wsgi:error] [pid 626:tid 1964717056] [remote 192.168.0.110:59068] mod_wsgi (pid=626): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:43:30.892490 2023] [wsgi:error] [pid 626:tid 1964717056] [remote 192.168.0.110:59068] mod_wsgi (pid=626): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:43:30.895465 2023] [wsgi:error] [pid 626:tid 1964717056] [remote 192.168.0.110:59068] Traceback (most recent call last):
+[Tue Jul 25 04:43:30.895664 2023] [wsgi:error] [pid 626:tid 1964717056] [remote 192.168.0.110:59068]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 04:43:30.895689 2023] [wsgi:error] [pid 626:tid 1964717056] [remote 192.168.0.110:59068]     from app import app as application
+[Tue Jul 25 04:43:30.895742 2023] [wsgi:error] [pid 626:tid 1964717056] [remote 192.168.0.110:59068]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 04:43:30.895764 2023] [wsgi:error] [pid 626:tid 1964717056] [remote 192.168.0.110:59068]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 04:43:30.895851 2023] [wsgi:error] [pid 626:tid 1964717056] [remote 192.168.0.110:59068] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 04:51:32.852042 2023] [wsgi:error] [pid 626:tid 1939538944] [remote 192.168.0.110:59379] mod_wsgi (pid=626): Failed to exec Python script file '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:51:32.852346 2023] [wsgi:error] [pid 626:tid 1939538944] [remote 192.168.0.110:59379] mod_wsgi (pid=626): Exception occurred processing WSGI script '/var/www/relay-flask-app/app.wsgi'.
+[Tue Jul 25 04:51:32.852987 2023] [wsgi:error] [pid 626:tid 1939538944] [remote 192.168.0.110:59379] Traceback (most recent call last):
+[Tue Jul 25 04:51:32.853240 2023] [wsgi:error] [pid 626:tid 1939538944] [remote 192.168.0.110:59379]   File "/var/www/relay-flask-app/app.wsgi", line 8, in <module>
+[Tue Jul 25 04:51:32.853289 2023] [wsgi:error] [pid 626:tid 1939538944] [remote 192.168.0.110:59379]     from app import app as application
+[Tue Jul 25 04:51:32.853394 2023] [wsgi:error] [pid 626:tid 1939538944] [remote 192.168.0.110:59379]   File "/var/www/relay-flask-app/app.py", line 10, in <module>
+[Tue Jul 25 04:51:32.853438 2023] [wsgi:error] [pid 626:tid 1939538944] [remote 192.168.0.110:59379]     GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 04:51:32.853595 2023] [wsgi:error] [pid 626:tid 1939538944] [remote 192.168.0.110:59379] RuntimeError: No access to /dev/mem.  Try running as root!
+[Tue Jul 25 04:51:44.149113 2023] [wsgi:error] [pid 626:tid 1964717056] First activation! Create database.db
+[Tue Jul 25 04:56:44.439211 2023] [wsgi:error] [pid 627:tid 1964106752] First activation! Create database.db
+[Tue Jul 25 05:04:42.815723 2023] [wsgi:error] [pid 629:tid 1964327936] First activation! Create database.db
+[Tue Jul 25 05:14:43.139963 2023] [wsgi:error] [pid 1398:tid 1964327936] /var/www/relay-flask-app/app.py:10: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 05:14:43.140205 2023] [wsgi:error] [pid 1398:tid 1964327936]   GPIO.setup(1, GPIO.OUT)
+[Tue Jul 25 05:14:43.140467 2023] [wsgi:error] [pid 1398:tid 1964327936] /var/www/relay-flask-app/app.py:11: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 05:14:43.140518 2023] [wsgi:error] [pid 1398:tid 1964327936]   GPIO.setup(2, GPIO.OUT)
+[Tue Jul 25 05:14:43.140727 2023] [wsgi:error] [pid 1398:tid 1964327936] /var/www/relay-flask-app/app.py:12: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 05:14:43.140775 2023] [wsgi:error] [pid 1398:tid 1964327936]   GPIO.setup(3, GPIO.OUT)
+[Tue Jul 25 05:14:43.140982 2023] [wsgi:error] [pid 1398:tid 1964327936] /var/www/relay-flask-app/app.py:13: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 05:14:43.141030 2023] [wsgi:error] [pid 1398:tid 1964327936]   GPIO.setup(4, GPIO.OUT)
+[Tue Jul 25 05:14:43.141239 2023] [wsgi:error] [pid 1398:tid 1964327936] /var/www/relay-flask-app/app.py:14: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 05:14:43.141360 2023] [wsgi:error] [pid 1398:tid 1964327936]   GPIO.setup(5, GPIO.OUT)
+[Tue Jul 25 05:14:43.141569 2023] [wsgi:error] [pid 1398:tid 1964327936] /var/www/relay-flask-app/app.py:15: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 05:14:43.141616 2023] [wsgi:error] [pid 1398:tid 1964327936]   GPIO.setup(6, GPIO.OUT)
+[Tue Jul 25 05:14:43.141821 2023] [wsgi:error] [pid 1398:tid 1964327936] /var/www/relay-flask-app/app.py:16: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 05:14:43.141866 2023] [wsgi:error] [pid 1398:tid 1964327936]   GPIO.setup(7, GPIO.OUT)
+[Tue Jul 25 05:14:43.142072 2023] [wsgi:error] [pid 1398:tid 1964327936] /var/www/relay-flask-app/app.py:17: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+[Tue Jul 25 05:14:43.142117 2023] [wsgi:error] [pid 1398:tid 1964327936]   GPIO.setup(8, GPIO.OUT)
+[Tue Jul 25 05:14:43.325052 2023] [wsgi:error] [pid 1398:tid 1964327936] First activation! Create database.db
+[Tue Jul 25 05:14:43.407964 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082] [2023-07-25 05:14:43,386] ERROR in app: Exception on /1/off [GET]
+[Tue Jul 25 05:14:43.408103 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082] Traceback (most recent call last):
+[Tue Jul 25 05:14:43.408145 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 05:14:43.408186 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]     response = self.full_dispatch_request()
+[Tue Jul 25 05:14:43.408222 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 05:14:43.408263 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]     rv = self.handle_user_exception(e)
+[Tue Jul 25 05:14:43.408300 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 05:14:43.408340 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 05:14:43.408377 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 05:14:43.408417 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]     rv = self.dispatch_request()
+[Tue Jul 25 05:14:43.408453 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 05:14:43.408491 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 05:14:43.408529 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]   File "/var/www/relay-flask-app/app.py", line 59, in relay_off
+[Tue Jul 25 05:14:43.408563 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082]     GPIO.output(int(id), GPIO.HIGH)
+[Tue Jul 25 05:14:43.408598 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60082] RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+[Tue Jul 25 05:14:48.900779 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096] [2023-07-25 05:14:48,898] ERROR in app: Exception on /1/off [GET]
+[Tue Jul 25 05:14:48.901055 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096] Traceback (most recent call last):
+[Tue Jul 25 05:14:48.901105 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 05:14:48.901146 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]     response = self.full_dispatch_request()
+[Tue Jul 25 05:14:48.901184 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 05:14:48.901223 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]     rv = self.handle_user_exception(e)
+[Tue Jul 25 05:14:48.901263 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 05:14:48.901304 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 05:14:48.901341 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 05:14:48.901379 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]     rv = self.dispatch_request()
+[Tue Jul 25 05:14:48.901415 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 05:14:48.901455 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 05:14:48.901492 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]   File "/var/www/relay-flask-app/app.py", line 59, in relay_off
+[Tue Jul 25 05:14:48.901527 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096]     GPIO.output(int(id), GPIO.HIGH)
+[Tue Jul 25 05:14:48.901563 2023] [wsgi:error] [pid 1398:tid 1930757120] [remote 192.168.0.110:60096] RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+[Tue Jul 25 05:14:53.629334 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101] [2023-07-25 05:14:53,627] ERROR in app: Exception on /1/on [GET]
+[Tue Jul 25 05:14:53.629505 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101] Traceback (most recent call last):
+[Tue Jul 25 05:14:53.629547 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 05:14:53.629589 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]     response = self.full_dispatch_request()
+[Tue Jul 25 05:14:53.629627 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 05:14:53.629667 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]     rv = self.handle_user_exception(e)
+[Tue Jul 25 05:14:53.629704 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 05:14:53.629795 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 05:14:53.629835 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 05:14:53.629874 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]     rv = self.dispatch_request()
+[Tue Jul 25 05:14:53.629910 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 05:14:53.629949 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 05:14:53.629985 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]   File "/var/www/relay-flask-app/app.py", line 54, in relay_on
+[Tue Jul 25 05:14:53.630022 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101]     GPIO.output(int(id), GPIO.LOW)
+[Tue Jul 25 05:14:53.630058 2023] [wsgi:error] [pid 1398:tid 1964327936] [remote 192.168.0.110:60101] RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+[Tue Jul 25 05:18:15.329814 2023] [wsgi:error] [pid 628:tid 1964160000] First activation! Create database.db
+[Tue Jul 25 05:18:15.388378 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838] [2023-07-25 05:18:15,369] ERROR in app: Exception on /2/off [GET]
+[Tue Jul 25 05:18:15.388474 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838] Traceback (most recent call last):
+[Tue Jul 25 05:18:15.388495 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 05:18:15.388516 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]     response = self.full_dispatch_request()
+[Tue Jul 25 05:18:15.388535 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 05:18:15.388555 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]     rv = self.handle_user_exception(e)
+[Tue Jul 25 05:18:15.388573 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 05:18:15.388593 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 05:18:15.388611 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 05:18:15.388630 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]     rv = self.dispatch_request()
+[Tue Jul 25 05:18:15.388648 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 05:18:15.388668 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 05:18:15.388686 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]   File "/var/www/relay-flask-app/app.py", line 59, in relay_off
+[Tue Jul 25 05:18:15.388703 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838]     GPIO.output(int(id), GPIO.HIGH)
+[Tue Jul 25 05:18:15.388764 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.111:42838] RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+[Tue Jul 25 05:18:20.348636 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834] [2023-07-25 05:18:20,346] ERROR in app: Exception on /2/off [GET]
+[Tue Jul 25 05:18:20.348904 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834] Traceback (most recent call last):
+[Tue Jul 25 05:18:20.349028 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 05:18:20.349074 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]     response = self.full_dispatch_request()
+[Tue Jul 25 05:18:20.349113 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 05:18:20.349152 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]     rv = self.handle_user_exception(e)
+[Tue Jul 25 05:18:20.349190 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 05:18:20.349231 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 05:18:20.349268 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 05:18:20.349307 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]     rv = self.dispatch_request()
+[Tue Jul 25 05:18:20.349342 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 05:18:20.349382 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 05:18:20.349418 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]   File "/var/www/relay-flask-app/app.py", line 59, in relay_off
+[Tue Jul 25 05:18:20.349454 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834]     GPIO.output(int(id), GPIO.HIGH)
+[Tue Jul 25 05:18:20.349489 2023] [wsgi:error] [pid 628:tid 1930589184] [remote 192.168.0.111:42834] RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+[Tue Jul 25 10:37:57.203056 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846] [2023-07-25 10:37:57,201] ERROR in app: Exception on /1/on [GET]
+[Tue Jul 25 10:37:57.203239 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846] Traceback (most recent call last):
+[Tue Jul 25 10:37:57.203282 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+[Tue Jul 25 10:37:57.203322 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]     response = self.full_dispatch_request()
+[Tue Jul 25 10:37:57.203359 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Tue Jul 25 10:37:57.203398 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]     rv = self.handle_user_exception(e)
+[Tue Jul 25 10:37:57.203486 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+[Tue Jul 25 10:37:57.203526 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 25 10:37:57.203563 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Tue Jul 25 10:37:57.203601 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]     rv = self.dispatch_request()
+[Tue Jul 25 10:37:57.203636 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]   File "/home/pi/.local/share/virtualenvs/relay-flask-app-xFPDQV2m/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+[Tue Jul 25 10:37:57.203675 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Jul 25 10:37:57.203711 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]   File "/var/www/relay-flask-app/app.py", line 54, in relay_on
+[Tue Jul 25 10:37:57.203746 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846]     GPIO.output(int(id), GPIO.LOW)
+[Tue Jul 25 10:37:57.203781 2023] [wsgi:error] [pid 628:tid 1964160000] [remote 192.168.0.110:57846] RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
